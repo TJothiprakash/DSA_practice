@@ -3,12 +3,12 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        Main main = new Main();
+        SlidingWindow main = new SlidingWindow();
         //int res = main.divisorSubstrings(430043, 2);
         //System.out.println(res);
        // int ans = main.minimumRecolors("WBWBBBW", 7);
         //System.out.println(ans);
-        System.out.println(main.minimumDifference(new int[]{9,4,1,7}, 2));
+        //System.out.println(main.minimumDifference(new int[]{9,4,1,7}, 2));
     }
 
     public int divisorSubstrings(int num, int k) {
