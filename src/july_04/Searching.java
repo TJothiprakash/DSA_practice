@@ -38,7 +38,8 @@ public class Searching {
 
         }
         System.out.println();
-        System.out.println(test[11] + " from the test array");
+        //var ans = new Searching();
+       // System.out.println(test[11] + " from the test array");
         int ans = new Searching().binarySearch(test, 21);
 
         System.out.println(ans);
