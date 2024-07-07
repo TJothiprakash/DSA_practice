@@ -1,0 +1,51 @@
+package july_7;
+
+
+
+import java.util.*;
+
+public class MinRotatedArray {
+    public static int findMin(int []arr) {
+        int low = 0, high = arr.length - 1;
+        int ans = Integer.MAX_VALUE;
+        int index=0;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+
+            //search space is already sorted
+            //then arr[low] will always be
+            //the minimum in that search space:
+            if (arr[low] <= arr[high]) {
+                index=low;
+                ans = Math.min(ans, arr[low]);
+                break;
+            }
+
+            //if left part is sorted:
+            if (arr[low] <= arr[mid]) {
+                // keep the minimum:
+                index=low;
+                ans = Math.min(ans, arr[low]);
+
+                // Eliminate left half:
+                low = mid + 1;
+
+            } else { //if right part is sorted:
+                    index=mid;
+                // keep the minimum:
+                ans = Math.min(ans, arr[mid]);
+
+                // Eliminate right half:
+                high = mid - 1;
+            }
+        }
+        return arr.length-index+1;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {4, 5, 6, 7, 8, 1, 2, 3};
+        int ans = findMin(arr);
+        System.out.println("The number of times array rotated is: " + ans );
+    }
+}
+
