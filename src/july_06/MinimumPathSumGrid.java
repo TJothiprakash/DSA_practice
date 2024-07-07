@@ -5,6 +5,7 @@ public class MinimumPathSumGrid {
         MinimumPathSumGrid minimumPathSumGrid = new MinimumPathSumGrid();
         int[][] test = {{1, 4, 5, 6}, {32, 64, 87, 9}, {12, 3, 5, 6}};
         System.out.println(minimumPathSumGrid.minPathSum(test));
+        System.out.println();
     }
 
     public int minPathSum(int[][] grid) {
