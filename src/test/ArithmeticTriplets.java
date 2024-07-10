@@ -1,7 +1,6 @@
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
+package test;
 
-import java.util.HashMap;
+import org.jetbrains.annotations.Contract;
 
 public class ArithmeticTriplets {
 

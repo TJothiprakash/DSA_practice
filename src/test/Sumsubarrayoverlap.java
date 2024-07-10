@@ -1,3 +1,5 @@
+package test;
+
 import org.jetbrains.annotations.NotNull;
 
 public class Sumsubarrayoverlap {
