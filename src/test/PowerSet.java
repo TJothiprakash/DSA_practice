@@ -1,3 +1,5 @@
+package test;
+
 import java.util.*;
 class TUF{
     static ArrayList<String> AllPossibleStrings(String s) {

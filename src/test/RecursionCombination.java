@@ -1,6 +1,5 @@
-import java.io.*;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+package test;
+
 import java.util.*;
 class RecursionCombination
 {

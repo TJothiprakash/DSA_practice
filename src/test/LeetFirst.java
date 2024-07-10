@@ -1,3 +1,5 @@
+package test;
+
 public class LeetFirst {
     public static void main(String[] args) {
         LeetFirst leetFirst = new LeetFirst();
