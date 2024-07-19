@@ -1,4 +1,4 @@
-package Cuious_Freaks.TwoPointer;
+package Curious_Freaks.TwoPointer;
 
 public class FindPair {
 

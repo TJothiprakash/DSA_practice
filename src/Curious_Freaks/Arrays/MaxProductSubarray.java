@@ -1,4 +1,4 @@
-package Cuious_Freaks.Arrays;
+package Curious_Freaks.Arrays;
 
 public class MaxProductSubarray {
     public static void main(String[] args) {

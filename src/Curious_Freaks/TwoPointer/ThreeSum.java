@@ -1,4 +1,4 @@
-package Cuious_Freaks.TwoPointer;
+package Curious_Freaks.TwoPointer;
 
 import java.util.Arrays;
 

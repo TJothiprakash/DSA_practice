@@ -1,4 +1,4 @@
-package Cuious_Freaks.Arrays;
+package Curious_Freaks.Arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;

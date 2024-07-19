@@ -1,4 +1,4 @@
-package Cuious_Freaks.Matrix;
+package Curious_Freaks.Matrix;
 
 public class MatrixSearch {
 
