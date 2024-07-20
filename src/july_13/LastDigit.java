@@ -95,6 +95,25 @@ public class LastDigit {
 
         return t;
     }
+    /*class Solution {
+    long power(int N, int R) {
+        long mod = 1000000007;
+        long result = 1;
+        long base = N;
+
+        while (R > 0) {
+            if (R % 2 == 1) { // If R is odd, multiply base with result
+                result = (result * base) % mod;
+            }
+            base = (base * base) % mod; // Square the base
+            R /= 2; // Halve R
+        }
+
+        return result;
+    }
+}
+*/
+
 
     public static int gcd(int a, int b) {
         // code here
