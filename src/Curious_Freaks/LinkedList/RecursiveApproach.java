@@ -33,7 +33,7 @@ class ReverseLinkedListUsingStack {
 
     // Function to reverse a singly
     // linked list using a recursion
-    public static Node reverseLinkedList(Node head) {
+    public static Node2 reverseLinkedList(Node2 head) {
         // Base case:
         // If the linked list is empty or has only one node,
         // return the head as it is already reversed.
@@ -44,11 +44,11 @@ class ReverseLinkedListUsingStack {
         // Recursive step:
         // Reverse the linked list starting
         // from the second node (head.next).
-        Node newHead = reverseLinkedList(head.next);
+        Node2 newHead = reverseLinkedList(head.next);
 
         // Save a reference to the node following
         // the current 'head' node.
-        Node front = head.next;
+        Node2 front = head.next;
 
         // Make the 'front' node point to the current
         // 'head' node in the reversed order.
@@ -65,8 +65,8 @@ class ReverseLinkedListUsingStack {
 
 
     // Function to print the linked list
-    public static void printLinkedList(Node head) {
-        Node temp = head;
+    public static void printLinkedList(Node2 head) {
+        Node2 temp = head;
         while (temp != null) {
             System.out.print(temp.data + " ");
             temp = temp.next;
@@ -76,10 +76,10 @@ class ReverseLinkedListUsingStack {
 
     public static void main(String[] args) {
         // Create a linked list with values 1, 3, 2, and 4
-        Node head = new Node(1);
-        head.next = new Node(3);
-        head.next.next = new Node(2);
-        head.next.next.next = new Node(4);
+        Node2 head = new Node2(1);
+        head.next = new Node2(3);
+        head.next.next = new Node2(2);
+        head.next.next.next = new Node2(4);
 
         // Print the original linked list
         System.out.print("Original Linked List: ");

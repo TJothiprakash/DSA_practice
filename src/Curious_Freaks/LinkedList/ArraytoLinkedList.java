@@ -5,8 +5,8 @@ public class ArraytoLinkedList {
 
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 // traversal in linked list
-
-        Node head = coventArraytolist(arr);
+/*
+     //   Node head = coventArraytolist(arr);
         Node node = head;
         while (node != null) {
             //   System.out.print(node.data + " ");
@@ -34,28 +34,28 @@ public class ArraytoLinkedList {
         }*/
     }
 
-    static Node coventArraytolist(int[] arr) {
+    static Node2 coventArraytolist(int[] arr) {
 
-        Node head = new Node(arr[0]);
-        Node it = head;
+        Node2 head = new Node2(arr[0]);
+        Node2 it = head;
         for (int i = 1; i < arr.length; i++) {
-            Node temp = new Node(arr[i]);
+            Node2 temp = new Node2(arr[i]);
             it.next = temp;
             it = temp;
         }
         return head;
     }
 
-    static Node deleteHead(Node head) {
+    static Node2 deleteHead(Node2 head) {
         if (head == null) return head;
-        Node temp = head;
+        Node2 temp = head;
         head = head.next;
         temp.next = null;
         return head;
 
     }
 
-    static void deleteTail(Node head) {
+    static void deleteTail(Node2 head) {
 
         while (head.next.next != null) {
             head = head.next;
@@ -65,11 +65,11 @@ public class ArraytoLinkedList {
     }
 
 
-    static Node deleteKthElement(Node head, int k) {
+    static Node2 deleteKthElement(Node2 head, int k) {
         if (head == null) return head;
         if (k == 1) return head.next;
 
-        Node temp = null, prev = null;
+        Node2 temp = null, prev = null;
         int count = 0;
         temp = head;
         while (temp != null) {
@@ -87,21 +87,21 @@ public class ArraytoLinkedList {
 
     }
 
-    static Node insertAtHead(Node head, int data) {
-        Node temp = new Node(data);
+    static Node2 insertAtHead(Node2 head, int data) {
+        Node2 temp = new Node2(data);
         temp.next = head;
         return temp;
     }
 
-    static Node insertAtKthposition(Node head, int data, int k) {
-        Node temp = new Node(data);
+    static Node2 insertAtKthposition(Node2 head, int data, int k) {
+        Node2 temp = new Node2(data);
         if (head == null) return head;
         if (k == 1) {
             temp.next = head;
             return temp;
         }
         int count = 0;
-        Node pre = null, cur = head;
+        Node2 pre = null, cur = head;
 
         while (cur != null) {
             count++;
