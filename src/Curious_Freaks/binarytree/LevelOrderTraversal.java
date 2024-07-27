@@ -8,6 +8,7 @@ import java.util.Queue;
 
 
 class TreeNode {
+    public Integer data;
     int val;
     TreeNode left;
     TreeNode right;
