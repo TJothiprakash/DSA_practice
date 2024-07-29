@@ -1,5 +1,7 @@
 package Curious_Freaks.binarytree;
 
+/*
+
 public class IsIdentical {
 
     public static void main(String[] args) {
@@ -35,3 +37,4 @@ public class IsIdentical {
     }
 
 }
+*/
