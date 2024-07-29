@@ -5,10 +5,10 @@ import org.jetbrains.annotations.NotNull;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+/*
+public class TreeNode {
 
 
-
-    public Integer ;
     int val;
     TreeNode left;
     TreeNode right;
@@ -18,7 +18,7 @@ import java.util.Queue;
         left = null;
         right = null;
     }
-}
+}*/
 
 public class LevelOrderTraversal {
     public static void main(String[] args) {
