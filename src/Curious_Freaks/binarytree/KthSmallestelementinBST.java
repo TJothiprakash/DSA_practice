@@ -90,7 +90,6 @@ class kthSmallestElementinBST {
 
 // Function to perform an in-order traversal
 // of a binary tree and print its nodes
-
 class BinaryTree {
     public static void main(String[] args) {
         // Creating a BST
