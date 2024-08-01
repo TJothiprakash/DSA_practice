@@ -1,9 +1,6 @@
 package july_06;
 
-import java.util.*;
-public class Maze {
-}
-
+import java.util.Arrays;
 
 
 class TUF {
@@ -32,17 +29,17 @@ class TUF {
 
     // Main function to calculate the number of paths through the maze
     static int mazeObstacles(int n, int m, int[][] maze) {
-        int dp[][] = new int[n][m];
+        int[][] dp = new int[n][m];
 
         // Initialize the dp array with -1
-        for (int row[] : dp)
+        for (int[] row : dp)
             Arrays.fill(row, -1);
 
         // Call the helper function starting from the bottom-right cell
         return mazeObstaclesUtil(n - 1, m - 1, maze, dp);
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // Define the maze
         int[][] maze = {
                 {0, 0, 0},
