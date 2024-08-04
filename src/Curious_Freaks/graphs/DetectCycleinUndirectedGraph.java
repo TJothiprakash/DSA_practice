@@ -1,6 +1,12 @@
 package Curious_Freaks.graphs;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+
+import java.util.ArrayList;
+
 
 public class DetectCycleinUndirectedGraph {
     public static void main(String[] args) {
@@ -16,6 +22,9 @@ public class DetectCycleinUndirectedGraph {
         adj.get(3).add(2);
         DetectCycleinUndirectedGraph g = new DetectCycleinUndirectedGraph();
         System.out.println(g.isCycle(V, adj));
+
+
+        System.out.println(g.isCycleusebfs(V, adj));
 
     }
 
@@ -50,4 +59,44 @@ public class DetectCycleinUndirectedGraph {
         }
         return false;
     }
-}
+
+
+
+    public boolean isCycleusebfs(int V, ArrayList<ArrayList<Integer>> adj) {
+        // Code here
+        boolean[] visited = new boolean[V];
+        Arrays.fill(visited, false);
+        for (int i = 0; i < V; i++) {
+            if (!visited[i]) {
+                if (bfscheck(i, adj, visited, -1)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+
+    }
+
+    private boolean bfscheck(int i, ArrayList<ArrayList<Integer>> adj, boolean[] visited, int parent) {
+
+        Queue<Pair<Integer, Integer>> q = new LinkedList<>();
+        q.add(new Pair(i, -1));
+        visited[i] = true;
+        while (!q.isEmpty()) {
+            int node = q.peek().getKey();
+            int par = q.peek().getValue();
+            q.remove();
+            for (int j : adj.get(node)) {
+                if (!visited[j]) {
+                    q.add(new Pair<>(j, node));
+                    visited[j] = true;
+                } else if (j != par) {
+                    return true;
+                }
+            }
+
+        }
+        return false;
+    }
+
+

@@ -33,6 +33,9 @@ public class DFS {
         // Code here
         boolean[] visited = new boolean[V + 1];
         ArrayList<Integer> list = new ArrayList<>();
+
+        //visited[0] = true;
+
         visited[0] = true;
 
         dfs(0, visited, adj, list);

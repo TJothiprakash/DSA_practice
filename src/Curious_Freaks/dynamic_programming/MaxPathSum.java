@@ -3,7 +3,7 @@ package Curious_Freaks.dynamic_programming;
 
 import java.util.Arrays;
 
-class Solution06 {
+public class MaxPathSum {
     public static void main(String[] args) {
 
     }
@@ -23,7 +23,7 @@ class Solution06 {
 
     private int function(int row, int column, int[][] arr, int[][] dp) {
         // Boundary check
-        if (row < 0 || column < 0) return Integer.MAX_VALUE;
+        if (row < 0 || column < 0) return Integer.MIN_VALUE;
 
         // Base case
         if (row == 0 && column == 0) return arr[0][0];
@@ -36,8 +36,10 @@ class Solution06 {
         int up = function(row - 1, column, arr, dp);
 
         // Memoize the result
-        dp[row][column] = arr[row][column] + Math.min(up, left);
+        dp[row][column] = arr[row][column] + Math.max(up, left);
         return dp[row][column];
     }
 
+
+}
 

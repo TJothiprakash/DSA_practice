@@ -21,8 +21,10 @@ public class BFS {
         adj.get(3).add(4);
 
         ArrayList<Integer> ans = obj.bfsOfGraph(V, adj);
+
         for (int k :
                 ans) {
+
             System.out.print(k + " ");
 
         }

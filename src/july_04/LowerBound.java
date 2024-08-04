@@ -3,8 +3,8 @@ package july_04;
 public class LowerBound {
     public static void main(String[] args) {
         LowerBound lowerBound = new LowerBound();
-        int[] arr = {1, 2, 3, 4, 5, 7, 10};
-        int r = lowerBound.lowerbound(arr, 12);
+        int[] arr = {1, 2, 3, 4, 5};
+        int r = lowerBound.lowerbound(arr, 3);
         System.out.println(r);
     }
 
@@ -15,7 +15,7 @@ public class LowerBound {
 
         while (low <= high) {
             int mid = (low + high) / 2;
-            if (arr[mid] >= target) {
+            if (arr[mid] >= target) {//for upper bound (arr[mid] > target)
                 ans = mid;
                 high = mid - 1;
             } else {
