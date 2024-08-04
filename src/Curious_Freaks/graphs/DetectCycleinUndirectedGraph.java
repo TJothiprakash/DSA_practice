@@ -1,11 +1,12 @@
 package Curious_Freaks.graphs;
 
-import july_13.Pair;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
+
+import java.util.ArrayList;
+
 
 public class DetectCycleinUndirectedGraph {
     public static void main(String[] args) {
@@ -21,6 +22,7 @@ public class DetectCycleinUndirectedGraph {
         adj.get(3).add(2);
         DetectCycleinUndirectedGraph g = new DetectCycleinUndirectedGraph();
         System.out.println(g.isCycle(V, adj));
+
 
         System.out.println(g.isCycleusebfs(V, adj));
 
@@ -57,6 +59,7 @@ public class DetectCycleinUndirectedGraph {
         }
         return false;
     }
+
 
 
     public boolean isCycleusebfs(int V, ArrayList<ArrayList<Integer>> adj) {
@@ -96,4 +99,4 @@ public class DetectCycleinUndirectedGraph {
         return false;
     }
 
-}
+

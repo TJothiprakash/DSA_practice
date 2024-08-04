@@ -1,5 +1,6 @@
 package Curious_Freaks.dynamic_programming;
 
+
 import java.util.Arrays;
 
 class Solution06 {
@@ -40,4 +41,3 @@ class Solution06 {
     }
 
 
-}
