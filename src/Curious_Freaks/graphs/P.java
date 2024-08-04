@@ -2,7 +2,7 @@ package Curious_Freaks.graphs;
 
 class Solution08 {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        SurroundedRegions solution = new SurroundedRegions();
 
         int[][] isConnected1 = {
                 {1, 1, 0},
